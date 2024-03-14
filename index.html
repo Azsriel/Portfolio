@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</head>
+<!-- TODO change font size according to screen size -->
+<body class="About">
+    <div class="Main">
+        <nav class="navbar">
+            <div class="navbar-toggle" id="navbar-toggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <script>
+                document.getElementById('navbar-toggle').addEventListener('click', function() {
+                var navbarMenu = document.getElementById('navbar-menu');
+                navbarMenu.classList.toggle('show');
+                this.classList.toggle('change');
+                });
+            </script>
+          </nav>
+        <div class="Content">
+            <span class="HeadText">
+                Hi, My Name is Furqaan Lateef
+            </span>
+            <span class="Text">
+                I am a student of <strong>VIT Vellore</strong>
+            </span>
+            <span class="Text">
+                I specialize in C++ and Game Dev
+            </span>
+            <span class="Text">
+                <a href="#"><strong>Click Here</strong></a> to see my <a href="#"><strong>Portfolio</strong></a>
+            </span>
+        </div>
+        <div class="Footer">
+            <span class="Icons">
+                <a href="https://github.com/Azsriel"><box-icon type='logo' name='github' size="400%" color="#a7a7a7"></box-icon></a>
+            </span>
+            <span class="Icons">
+                <a href="https://www.linkedin.com/in/furqaan-lateef-b65246252/"><box-icon name='linkedin-square' type='logo' size="400%" color="#a7a7a7"  ></box-icon></a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
