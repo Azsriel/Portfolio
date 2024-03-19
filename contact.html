@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="Contact">
+<div class="Main">
+    <nav class="navbar">
+        <div class="navbar-toggle" id="navbar-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="qualifications.html">Qualifications</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <script>
+            document.getElementById('navbar-toggle').addEventListener('click', function() {
+            var navbarMenu = document.getElementById('navbar-menu');
+            navbarMenu.classList.toggle('show');
+            this.classList.toggle('change');
+            });
+        </script>
+    </nav>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>Feel free to get in touch with me using the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
